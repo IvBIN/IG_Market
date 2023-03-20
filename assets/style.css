@@ -3,35 +3,40 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Poppins:wght@700&display=swap');*/
 
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.container{
+
+.container {
     width: 1134.8px;
     margin: 0 auto;
 }
-.bg{
+
+.bg {
     position: absolute;
     z-index: -5;
     width: 100%;
     height: 509.3px;
     top: -100px;
 }
-header .container{
+
+header .container {
     height: 42px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 25px;
 }
-.logo{
+
+.logo {
     width: 113px;
     height: 30px;
 }
+
 .btn,
-.demon{
+.demon {
     color: #ffffff;
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -39,16 +44,18 @@ header .container{
     opacity: 0.94;
     text-decoration: none;
 }
-.btn:not(:last-child){
+
+.btn:not(:last-child) {
     margin-right: 35px;
 }
 
-.demon{
+.demon {
     padding: 12px 20px 12px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 21px;
 }
-.welcom_block .container{
+
+.welcom_block .container {
     margin-top: 150px;
     font-family: 'Poppins', sans-serif;
     display: grid;
@@ -56,7 +63,8 @@ header .container{
                          "text_ img"
                          "demon img";
 }
-.title{
+
+.title {
     /*position: absolute;*/
     /*top: 389px;*/
     grid-area: title_;
@@ -71,7 +79,8 @@ header .container{
     -webkit-background-clip: text;
     margin-bottom: 20px;
 }
-.demon_w{
+
+.demon_w {
     position: absolute;
     top: 626px;
     grid-area: demon;
@@ -89,10 +98,12 @@ header .container{
     border-radius: 26px;
 
 }
-.demon_w img{
+
+.demon_w img {
     margin-left: 10px;
 }
-.welcom_text{
+
+.welcom_text {
     position: absolute;
     top: 526px;
     grid-area: text_;
@@ -104,47 +115,55 @@ header .container{
     line-height: 30px;
     margin-top: 0px;
 }
-.welcom_img{
+
+.welcom_img {
     grid-area: img;
     width: 718.34px;
     height: 593.6px;
     float: right;
     margin-top: -120px;
 }
+
 /*CLIENT_BLOG*/
-.client_blog .container{
+.client_blog .container {
     margin-top: 566px;
 }
-.title_client{
+
+.title_client {
     text-align: center;
-    font-family:'Lato', sans-serif ;
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-size: 16px;
-    color:#B2B7BE ;
+    color: #B2B7BE;
     margin-bottom: 71px;
 }
-.clients img{
+
+.clients img {
     display: block;
     margin: 0 auto;
     opacity: 0.75;
 }
-.clients img:hover{
+
+.clients img:hover {
     opacity: 1;
 }
-.clients{
+
+.clients {
     /*display: grid;*/
     /*grid-template-columns: repeat(6, 1fr);*/
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 /*ADVERT*/
-.advert{
+.advert {
     text-align: center;
     width: 551px;
     margin: 80px auto;
 }
-.advert h4{
+
+.advert h4 {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-size: 40px;
@@ -154,7 +173,8 @@ header .container{
     margin-bottom: 10px;
 
 }
-.text_advert{
+
+.text_advert {
     width: 551px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -162,29 +182,41 @@ header .container{
     line-height: 28px;
     letter-spacing: 0.01em;
     color: #426666;
- }
+}
+
 /*INFO*/
-.blocks{
+.blocks {
     width: 788.93px;
     /*display: block;*/
     /*position: center;*/
     margin: 0 auto;
 }
-.block{
-    font-family: 'Inter', sans-serif;
+
+.block {
     display: grid;
-    grid-template-areas: "theme img"
-                         "title img"
-                         "text img"
-                         "btn img";
-    width: 788.93px;
-    background: gray;
+    grid-template-columns: 2fr 1fr;
+    /*grid-template-areas: "theme img"*/
+    /*                     "title img"*/
+    /*                     "text img"*/
+    /*                     "btn img";*/
+    width: 100%;
+    /*background: gray;*/
 }
-.block:not(:last-child){
+.info_title{
+    margin-left: 20px;
+}
+.info_title h5 {
+    margin-top: 25px;
+
+}
+
+.block:not(:last-child) {
     margin-bottom: 79px;
 }
-.block h5{
-    grid-area: theme;
+
+.block h5 {
+    /*grid-area: theme;*/
+    font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: normal;
     /*margin-top: 8px;*/
@@ -193,24 +225,32 @@ header .container{
     display: block;
     justify-content: end;
 }
-.block h4{
-    grid-area: title;
+
+.block h4 {
+    /*grid-area: title;*/
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
     font-weight: normal;
     margin-top: 8px;
     color: #1F1F26;
 }
-.text_block{
-    grid-area: text;
+
+.text_block {
+    /*grid-area: text;*/
     /*margin-top: -15px;*/
-    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
     letter-spacing: 0.01em;
     width: 340px;
+    display: block;
     color: #426666;
+    font-weight: 400;
+    font-style: normal;
 }
-.btn_block{
-    grid-area: btn;
+
+.btn_block {
+    display: block;
+    /*grid-area: btn;*/
     margin: 0;
     /*position: absolute;*/
     /*width: max-content;*/
@@ -218,24 +258,32 @@ header .container{
     /*display: flex;*/
     /*align-items: center;*/
     color: #42424A;
-    /*font-family: 'Inter', sans-serif;*/
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-size: 15px;
     text-decoration: none;
-    padding: 12px 15px 12px 20px;
+    padding: 12px 15px 12px 0px;
     /*background: #231A36;*/
     /*border-radius: 26px;*/
 
 }
-.btn_block img{
+
+.btn_block img {
     margin-left: 10px;
 }
-.img_block{
-    grid-area: img;
+
+.img_block {
+    /*grid-area: img;*/
     /*width: 240.48px;*/
-    float: right;
+    /*float: right;*/
+    /*display: flex;*/
+    /*justify-content: right;*/
+
 }
-.revers{
+
+
+
+.revers {
     font-family: 'Inter', sans-serif;
     display: grid;
     grid-template-areas: "img theme"
@@ -243,20 +291,24 @@ header .container{
                          "img text"
                          "img btn";
 }
-.revers h5{
+
+.revers h5 {
     color: #FBBA33;
 }
-.third h5{
+
+.third h5 {
     color: #DE2879;
 }
+
 /*DATA BLOCK*/
-.data_block{
-   height: 590px;
-   background: #231A36;
-   margin-bottom: 130px;
-   margin-top: 110px;
+.data_block {
+    height: 590px;
+    background: #231A36;
+    margin-bottom: 130px;
+    margin-top: 110px;
 }
-.data_block h2{
+
+.data_block h2 {
     width: 734px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -268,7 +320,8 @@ header .container{
     margin-left: auto;
     margin-right: auto;
 }
-.text_data{
+
+.text_data {
     width: 562px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -281,25 +334,29 @@ header .container{
     margin-right: auto;
 
 }
-.data_blocks{
+
+.data_blocks {
     display: grid;
     grid-template-columns: repeat(4, 2fr);
     padding: 25px 0;
     margin-top: 120px;
 }
+
 .cell_digital,
-.cell_name{
+.cell_name {
     display: flex;
     justify-content: space-between;
 }
-.cell_digital{
+
+.cell_digital {
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
     font-weight: 600;
     line-height: 40px;
     color: #ffffff;
 }
-.cell_name{
+
+.cell_name {
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -308,32 +365,32 @@ header .container{
     margin-top: 10px;
 }
 
+.data_cell {
+    padding-left: 100px;
+}
+
 /*TEAM BLOCK*/
-.team_img{
-    /*position: relative;*/
-    width: 340px;
+.team_img {
+    position: relative;
+    width: 360px;
     height: 300px;
     border-radius: 2px 2px 0px 0px;
     /*z-index: -5;*/
 }
-/*.team_block :first-child{*/
-/*    position: relative;*/
-/*}*/
-/*.team_block :nth-child(2){*/
-/*    position: absolute;*/
-/*    top: 87px;*/
-/*}*/
-.team_info{
 
+.team_info {
+    position: absolute;
     width: 272px;
     height: 175px;
     background: #ffffff;
     border-radius: 0px 0px 2px 2px;
     border: 1px solid gray;
     display: grid;
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    transform: translateY(-50%);
 }
-.team_name{
+
+.team_name {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 600;
@@ -342,30 +399,34 @@ header .container{
     padding-left: 25px;
     margin: 22px 0 20px;
 }
-.team_rates{
+
+.team_rates {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     padding-left: 25px;
+
 }
+
 .team_rate1,
-.team_rate2{
+.team_rate2 {
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
     font-weight: 600;
     line-height: 24px;
     color: #1F1F26;
 }
+
 .team_n_rate1,
-.team_n_rate2{
+.team_n_rate2 {
     font-family: 'Inter', sans-serif;
     font-size: 10px;
     font-weight: 500;
     line-height: 10px;
     color: #ADADBA;
     padding-top: 8px;
-
 }
-.btn_team{
+
+.btn_team {
     font-family: 'Inter', sans-serif;
     font-size: 15px;
     font-weight: 500;
@@ -375,14 +436,22 @@ header .container{
     padding-left: 25px;
     margin: 22px 0 27px;
 }
+
 .team_rate1,
-.team_n_rate1{
+.team_n_rate1 {
     display: flex;
     justify-content: space-between;
 }
+
 .team_rate2,
-.team_n_rate2{
+.team_n_rate2 {
     display: flex;
     justify-content: space-between;
+}
+
+.team_blocks {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 156px;
 }
 
