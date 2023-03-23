@@ -48,6 +48,27 @@ header .container {
 .btn:not(:last-child) {
     margin-right: 35px;
 }
+/*TRY UL: START */
+/*.btn_select ul{*/
+/*    list-style: none;*/
+/*}*/
+/*.btn_select > ul{*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*}*/
+/*.btn_select ul{*/
+/*    position: absolute;*/
+/*    display: none;*/
+/*}*/
+/*.btn_select ul > ul li a{*/
+/*    text-transform: none;*/
+/*    text-decoration: none;*/
+/*    color: white;*/
+/*}*/
+/*.btn btn_select li:hover > ul{*/
+/*    display: block;*/
+/*}*/
+/*TRY UL: STOP */
 
 .demon {
     padding: 12px 20px 12px;
